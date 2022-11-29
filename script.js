@@ -1,9 +1,16 @@
-const displayer = document.getElementById('displayer')
-const btn = document.getElementById('display-btn')
-const box = document.querySelector('input')
-const form = document.querySelector('form')
+const form = document.querySelector("form");
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    displayer.innerText = box.value
-})
+let numberOfSets;
+let exerciseDuration;
+let restDuration;
+let restBetweenSets;
+const prepareTime = 10;
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  numberOfSets = form[0].value;
+  exerciseDuration = form[1].value;
+  restDuration = form[2].value;
+  restBetweenSets = form[3].value;
+});

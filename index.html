@@ -7,32 +7,41 @@
     <title>HIIT App</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header><h1>HIIT APP</h1></header>
-    <section>
-        <header><h2>Fill in the blanks</h2></header>
+    <header id="main-header">
+        <h1>HIIT APP</h1>
+        <!-- <p>by Mati</p> -->
+    </header>
+    <section id="input-box">
+        <header>
+            <h2>Fill in the blanks</h2>
+        </header>
         <form>
             <table>
                 <tr>
                     <td><label for="sets">Number of sets:</label></td>
-                    <td><input type="number" name="sets" id="sets" required></td>
+                    <td><input type="number" name="sets" id="sets" min="1" required></td>
                 </tr>
                 <tr>
                     <td><label for="exercise-duration">Exercise duration:</label></td>
-                    <td><input type="number" name="exercise-duration" id="exercise-duration" required></td>
+                    <td><input type="number" name="exercise-duration" id="exercise-duration" min="1" required></td>
                 </tr>
                 <tr>
                     <td><label for="active-rest">Rest duration:</label></td>
-                    <td><input type="number" name="active-rest" id="active-rest" required></td>
+                    <td><input type="number" name="active-rest" id="active-rest" min="1" required></td>
                 </tr>
                 <tr>
                     <td><label for="rest-sets">Rest between sets:</label></td>
-                    <td><input type="number" name="rest-sets" id="rest-sets" required></td>
+                    <td><input type="number" name="rest-sets" id="rest-sets" min="1" required></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button>GO</button>
+                        <button id="start-button">GO</button>
                     </td>
                 </tr>
             </table>
