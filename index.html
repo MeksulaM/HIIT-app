@@ -24,6 +24,10 @@
         <form>
             <table>
                 <tr>
+                    <td><label for="circuits">Number of circuits:</label></td>
+                    <td><input type="number" name="circuits" id="circuits" min="1" required></td>
+                </tr>
+                <tr>
                     <td><label for="sets">Number of sets:</label></td>
                     <td><input type="number" name="sets" id="sets" min="1" required></td>
                 </tr>
@@ -36,7 +40,7 @@
                     <td><input type="number" name="active-rest" id="active-rest" min="1" required></td>
                 </tr>
                 <tr>
-                    <td><label for="rest-sets">Rest between sets:</label></td>
+                    <td><label for="rest-sets">Rest between circuits:</label></td>
                     <td><input type="number" name="rest-sets" id="rest-sets" min="1" required></td>
                 </tr>
                 <tr>
@@ -46,6 +50,14 @@
                 </tr>
             </table>
         </form>
+    </section>
+    <section id="timer-container">
+        <div id="timer"></div>
+        <div id="info"></div>
+        <div id="buttons">
+            <button id="start-pause-button">start</button>
+            <button>restart</button>
+        </div>
     </section>
 </body>
 </html>
