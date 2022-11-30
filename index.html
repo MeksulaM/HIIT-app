@@ -1,42 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HIIT App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    <header><h1>HIIT APP</h1></header>
-    <section>
-        <header><h2>Fill in the blanks</h2></header>
-        <form>
-            <table>
-                <tr>
-                    <td><label for="sets">Number of sets:</label></td>
-                    <td><input type="number" name="sets" id="sets" required></td>
-                </tr>
-                <tr>
-                    <td><label for="exercise-duration">Exercise duration:</label></td>
-                    <td><input type="number" name="exercise-duration" id="exercise-duration" required></td>
-                </tr>
-                <tr>
-                    <td><label for="active-rest">Rest duration:</label></td>
-                    <td><input type="number" name="active-rest" id="active-rest" required></td>
-                </tr>
-                <tr>
-                    <td><label for="rest-sets">Rest between sets:</label></td>
-                    <td><input type="number" name="rest-sets" id="rest-sets" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button>GO</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>HIIT APP</h1>
+      <!-- <p>by Mati</p> -->
+    </header>
+    <section id="input-box">
+      <header>
+        <h2>Fill in the blanks</h2>
+      </header>
+      <form>
+        <table>
+          <tr>
+            <td><label for="circuits">Number of circuits:</label></td>
+            <td>
+              <input
+                type="number"
+                name="circuits"
+                id="circuits"
+                min="1"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sets">Number of sets:</label></td>
+            <td>
+              <input type="number" name="sets" id="sets" min="1" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="exercise-duration">Exercise duration:</label></td>
+            <td>
+              <input
+                type="number"
+                name="exercise-duration"
+                id="exercise-duration"
+                min="1"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="active-rest">Rest duration:</label></td>
+            <td>
+              <input
+                type="number"
+                name="active-rest"
+                id="active-rest"
+                min="1"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="rest-sets">Rest between circuits:</label></td>
+            <td>
+              <input
+                type="number"
+                name="rest-sets"
+                id="rest-sets"
+                min="1"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button id="start-button">GO</button>
+            </td>
+          </tr>
+        </table>
+      </form>
     </section>
-</body>
+    <section id="timer-container">
+      <div id="timer"></div>
+      <div id="info"></div>
+      <div id="buttons">
+        <button id="start-pause-button">start</button>
+        <button>restart</button>
+      </div>
+    </section>
+  </body>
 </html>
