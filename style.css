@@ -1,96 +1,96 @@
 html {
-    font-family: 'Righteous', cursive;
-    color: white;
+  font-family: "Righteous", cursive;
+  color: white;
 }
 
-body{
-    background: url('image.jpg') no-repeat center center/cover;
-    overflow: hidden;
-    height: 100vh;
+body {
+  background: url("image.jpg") no-repeat center center/cover;
+  overflow: hidden;
+  height: 100vh;
 }
 
 #main-header {
-    text-align: center;
-    width: 20rem;
+  text-align: center;
+  width: 20rem;
 
-    /* background-color: green; */
+  /* background-color: green; */
 
-    position: fixed;
-    top: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #input-box {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: .8rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
 
-    min-width: 17rem;
+  min-width: 17rem;
 }
 
-#input-box>header{
-    text-align: center;
-    letter-spacing: 3px;
+#input-box > header {
+  text-align: center;
+  letter-spacing: 3px;
 }
 
 #input-box input {
-    width: 2rem;
-    font-family: 'Righteous', cursive;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    border-radius: 2px;
-    padding: 0.2rem 0.65rem;
-    outline: none;
-    text-align: center;
-    transition: 0.2s;
+  width: 2rem;
+  font-family: "Righteous", cursive;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 2px;
+  padding: 0.2rem 0.65rem;
+  outline: none;
+  text-align: center;
+  transition: 0.2s;
 }
 
 #input-box input:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #input-box input:focus {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 #input-box input::-webkit-outer-spin-button,
 #input-box input::-webkit-inner-spin-button {
-    appearance: none;
+  appearance: none;
 }
 
 #input-box button {
-    font-family: 'Righteous', cursive;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    border: none;
-    padding: 0.45rem 1rem;
-    border-radius: 2px;
-    width: 100%;
-    margin-top: 1rem;
-    transition: 0.2s;
+  font-family: "Righteous", cursive;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 1rem;
+  transition: 0.2s;
 }
 
 #input-box button:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #input-box button:active {
-    background-color: black;
+  background-color: black;
 }
 
 table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 1.5rem 1rem;
-    border-left: 0;
-    border-right: 0;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1.5rem 1rem;
+  border-left: 0;
+  border-right: 0;
 }
